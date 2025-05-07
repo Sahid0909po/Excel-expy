@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Excel Formula & Shortcut Guide</h1>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Search..." />
+      <select id="filter">
+        <option value="All">All Levels</option>
+        <option value="Basic">Basic</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+      <button onclick="exportPDF()">Export PDF</button>
+    </div>
+
+    <div id="card-container" class="card-grid"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
